@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import "tailwindcss";
+
+:root{
+  --primary : #637daa;
+}
+
+.bgScreen{
+  background: radial-gradient(circle at left, #1A0F2E 0%, #05060A 25%);
+}
+
+
+.font-orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-orbitron-400 { font-weight: 400; }
+.font-orbitron-500 { font-weight: 500; }
+.font-orbitron-600 { font-weight: 600; }
+.font-orbitron-700 { font-weight: 700; }
+.font-orbitron-800 { font-weight: 800; }
+.font-orbitron-900 { font-weight: 900; }
+
+.font-space-grotesk {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.font-space-grotesk-400 { font-weight: 400; }
+.font-space-grotesk-500 { font-weight: 500; }
+.font-space-grotesk-600 { font-weight: 600; }
+.font-space-grotesk-700 { font-weight: 700; }
+.font-space-grotesk-800 { font-weight: 800; }
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 10px solid var(--primary);
+  margin: 8px auto;
+}
