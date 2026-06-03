@@ -5,7 +5,7 @@
   --primary : #637daa;
 }
 
-.bgScreen{
+body {
   background: radial-gradient(circle at left, #1A0F2E 0%, #05060A 25%);
 }
 
@@ -40,3 +40,33 @@
   border-top: 10px solid var(--primary);
   margin: 8px auto;
 }
+
+.fade {
+  opacity: 0;
+
+  animation: fade-in-out linear;
+  animation-timeline: view();
+  animation-range: entry 0% exit 100%;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    scale: 0.9;
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+    scale: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+    scale: 0.9;
+  }
+}
+

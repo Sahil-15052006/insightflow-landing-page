@@ -1,20 +1,31 @@
-import FlowChartDesktop from "../components/flowchart/FlowChartDesktop";
-import FlowChartMobile from "../components/flowchart/FlowChartMobile";
+import FlowChartDesktop from "../components/flowchart/FlowChartDesktop"
+import FlowChartMobile from "../components/flowchart/FlowChartMobile"
 
 function SystemArchitecture() {
   return (
-    <div className="flex flex-col w-full min-h-screen py-10 font-space-grotesk items-center">
-      <h1 className="font-orbitron text-left w-full font-bold text-3xl lg:text-6xl mb-10 text-[var(--primary)]">
-        System Architecture
-      </h1>
-      <div className="lg:flex hidden justify-center items-center w-full h-full px-20">
-        <FlowChartDesktop />
+    <section
+      id="systemArchitecture"
+      className="font-space-grotesk flex flex-col w-full min-h-screen justify-center items-start py-20 gap-10"
+    >
+      <div className="flex flex-col gap-3">
+        <p className="font-orbitron text-[11px] tracking-[4px] text-(--primary)/70 uppercase fade">
+          How it works
+        </p>
+        <h1 className="font-orbitron font-bold text-3xl lg:text-6xl text-(--primary) fade">
+          System Architecture
+        </h1>
       </div>
-      <div className="lg:hidden">
-        <FlowChartMobile />
+
+      <div className="w-full">
+        <div className="hidden lg:flex justify-center items-center w-full fade">
+          <FlowChartDesktop />
+        </div>
+        <div className="lg:hidden fade">
+          <FlowChartMobile />
+        </div>
       </div>
-    </div>
-  );
+    </section>
+  )
 }
 
-export default SystemArchitecture;
+export default SystemArchitecture
