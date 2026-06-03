@@ -1,6 +1,6 @@
 import { useFrame } from '@react-three/fiber';
 import { useRef } from 'react';
-import * as THREE from 'three'
+import type { Mesh } from "three";
 
 export default function MainTorus(){
 
@@ -9,16 +9,16 @@ export default function MainTorus(){
   const arcIntensity = 5
   const sphereIntensity = 2
 
-  const sphereRef = useRef<THREE.Mesh | null>(null)
-  const torusRef = useRef<THREE.Mesh | null >(null)
-  const innerTorusRef = useRef<THREE.Mesh | null >(null)
-  const arcRef1 = useRef<THREE.Mesh | null >(null)
-  const arcRef2 = useRef<THREE.Mesh | null >(null)
-  const arcRef3 = useRef<THREE.Mesh | null >(null)
+  const sphereRef = useRef<Mesh | null>(null)
+  const torusRef = useRef<Mesh | null >(null)
+  const innerTorusRef = useRef<Mesh | null >(null)
+  const arcRef1 = useRef<Mesh | null >(null)
+  const arcRef2 = useRef<Mesh | null >(null)
+  const arcRef3 = useRef<Mesh | null >(null)
 
 
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (!innerTorusRef.current || !torusRef.current  || !arcRef1.current  || !arcRef2.current || !arcRef3.current || !sphereRef.current) return;
 
     sphereRef.current.rotation.x += delta * 0.5;
