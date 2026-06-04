@@ -29,7 +29,7 @@ function App() {
           <Sidebar/>
         </div>
 
-        <div className="z-0 inset-0 absolute opacity-10">
+        <div className="z-0 inset-0 absolute opacity-15 sm:opacity-10 ">
           <Canvas camera={{position:[0,0,10] , fov:75 } }>
             <CameraController scrollYProgress={scrollYProgress}/>
             <TorusArc/>

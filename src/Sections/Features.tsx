@@ -40,7 +40,7 @@ function Features() {
   return (
     <section
       id="features"
-      className="font-space-grotesk grid min-h-screen w-full items-center gap-10 py-20 lg:py-24 "
+      className="font-space-grotesk grid min-h-screen w-full items-center gap-10 pt-20 lg:py-24 "
     >
       {/* Header + animated description */}
       <div className="flex flex-col gap-4">

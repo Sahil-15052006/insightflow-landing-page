@@ -5,7 +5,7 @@ function SystemArchitecture() {
   return (
     <section
       id="systemArchitecture"
-      className="font-space-grotesk flex flex-col w-full min-h-screen justify-center items-start py-20 gap-10"
+      className="font-space-grotesk flex flex-col w-full min-h-screen justify-center items-start pt-20 gap-10"
     >
       <div className="flex flex-col gap-3">
         <p className="font-orbitron text-[11px] tracking-[4px] text-(--primary)/70 uppercase fade">

@@ -5,7 +5,7 @@ export default function DownloadPage() {
   return (
     <section
       id="download"
-      className="font-space-grotesk flex flex-col w-full min-h-screen justify-center items-center py-20"
+      className="font-space-grotesk flex flex-col w-full min-h-screen justify-center items-center pt-20"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 w-full items-center">
 
@@ -44,11 +44,11 @@ export default function DownloadPage() {
             autoPlay
             loop
             muted
-            className="absolute h-100 w-auto object-contain rounded-2xl"
+            className="absolute h-120 py-3 w-auto object-contain rounded-4xl overflow-hidden z-1"
           />
 
 
-          <img src={mobile} alt="InsightFlow mobile app" className="h-120 w-auto object-contain overflow-hidden z-2" />
+          <img src={mobile} alt="InsightFlow mobile app" className="h-120 w-auto object-contain overflow-hidden rounded-xl z-2" />
         </div>
 
       </div>

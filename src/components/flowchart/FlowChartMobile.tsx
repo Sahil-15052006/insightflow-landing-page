@@ -15,7 +15,7 @@ export default function FlowChartMobile() {
 
         <ArrowBigDown className="text-(--primary) fill-(--primary) drop-shadow-[0_0_8px_var(--primary)] fade "/>
 
-        <div className="backdrop-blur-lg border border-(--primary)/40 bg-(--primary)/5 rounded-3xl px-10 py-12 flex flex-col items-center gap-5 relative fade">
+        <div className="backdrop-blur-lg border border-(--primary)/40 bg-(--primary)/5 rounded-3xl px-10 py-12 flex flex-col items-center gap-5 relative">
 
           <h2 className="absolute -top-5 px-6 py-2 rounded-full bg-black border border-(--primary) text-(--primary) font-orbitron text-sm tracking-widest fade">
             BACKEND
