@@ -5,7 +5,7 @@ export default function DownloadPage() {
   return (
     <section
       id="download"
-      className="font-space-grotesk flex flex-col w-full min-h-screen justify-center items-center pt-20"
+      className="font-space-grotesk flex flex-col w-full min-h-screen justify-center items-center py-20 "
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 w-full items-center">
 
@@ -19,7 +19,7 @@ export default function DownloadPage() {
             Download Our App
           </h1>
 
-          <h2 className="font-orbitron font-bold text-3xl lg:text-5xl text-white fade">
+          <h2 className="font-orbitron font-bold text-xl lg:text-4xl text-white fade">
             Download for Android
           </h2>
 

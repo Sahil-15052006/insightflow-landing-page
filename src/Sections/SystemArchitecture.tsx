@@ -20,7 +20,7 @@ function SystemArchitecture() {
         <div className="hidden lg:flex justify-center items-center w-full fade">
           <FlowChartDesktop />
         </div>
-        <div className="lg:hidden fade">
+        <div className="lg:hidden">
           <FlowChartMobile />
         </div>
       </div>
